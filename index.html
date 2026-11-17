@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Seu Nome · Personal Trainer</title>
+  <meta name="description" content="Treino personalizado presencial e online, com acompanhamento de perto. Agende sua avaliação.">
+  <meta name="theme-color" content="#F4EEE6">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seu Nome · Personal Trainer">
+  <meta property="og:description" content="Treino sob medida para quem quer resultado sem viver na academia. Presencial e online.">
+  <meta property="og:image" content="https://joaopedro-g.github.io/personal/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://joaopedro-g.github.io/personal/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23FF5A2C'/%3E%3Cpath d='M18 40c6-14 22-14 28-2' stroke='%231A1411' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='24' r='5' fill='%231A1411'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/personal.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#topo" aria-label="Início">
+    <span class="brand__mark" data-initials>SN</span>
+    <span class="brand__name"><span data-slot="nome">Seu Nome</span><small>Personal Trainer</small></span>
+  </a>
+  <nav class="nav__links" aria-label="Seções">
+    <a href="#sobre">Sobre</a>
+    <a href="#metodo">Método</a>
+    <a href="#modalidades">Modalidades</a>
+    <a href="#planos">Planos</a>
+    <a href="#duvidas">Dúvidas</a>
+  </nav>
+  <a class="btn btn--ink btn--sm nav__cta" href="#contato" data-wa="Oi! Quero agendar minha avaliação.">Agendar avaliação</a>
+  <button class="nav__burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="blob blob--main"></div>
+    <div class="blob blob--soft"></div>
+    <svg class="hero__rings" viewBox="0 0 600 600"><circle cx="300" cy="300" r="220"/><circle cx="300" cy="300" r="290"/></svg>
+  </div>
+
+  <h1 class="hero__name">
+    <span class="hero__eyebrow" data-reveal="fade">Personal Trainer · CREF <span data-slot="cref">000000-G/UF</span></span>
+    <span class="fit" data-slot="nome" data-split>Seu Nome</span>
+    <span class="hero__note" data-default-only aria-hidden="true">
+      <svg viewBox="0 0 60 40"><path d="M56 34C38 36 16 30 9 8m0 0-2 11m2-11 9 7"/></svg>
+      seu nome aqui
+    </span>
+  </h1>
+
+  <div class="hero__figure">
+    <img class="hero__img" src="assets/personal.webp" alt="Personal trainer sorrindo, de braços cruzados, com roupa de treino preta" width="587" height="1234" fetchpriority="high">
+    <div class="badge-rot" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+        <text><textPath href="#circ" textLength="458" lengthAdjust="spacing">treino personalizado ✦ online &amp; presencial ✦</textPath></text>
+      </svg>
+      <span class="badge-rot__core">
+        <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="hero__copy">
+    <span class="pill" data-reveal><span class="pulse"></span>Agenda aberta para <b data-month>este mês</b></span>
+    <p class="hero__lead" data-reveal>Treino sob medida para quem quer resultado <em>sem viver na academia.</em></p>
+    <p class="hero__sub" data-reveal>Presencial em <span class="slot" data-slot="cidade">Sua Cidade</span> ou online, com acompanhamento de perto — do primeiro agachamento à sua melhor versão.</p>
+    <div class="hero__ctas" data-reveal>
+      <a class="btn btn--accent magnetic" href="#contato" data-wa="Oi! Vi seu site e quero começar a treinar.">
+        Quero começar
+        <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="#planos">Ver planos</a>
+    </div>
+  </div>
+
+  <div class="hero__cards" aria-hidden="true">
+    <div class="gcard gcard--people float" data-reveal="pop" style="--d:.9s; --f:0s">
+      <div class="avatars"><i>A</i><i>R</i><i>J</i><i>+</i></div>
+      <div><b><span data-count="120">0</span>+</b><small>alunos acompanhados</small></div>
+    </div>
+    <div class="gcard gcard--rate float" data-reveal="pop" style="--d:1.05s; --f:-2s">
+      <div class="stars">★★★★★</div>
+      <b>4,9</b><small>nota média dos alunos</small>
+    </div>
+    <div class="gcard gcard--done float" data-reveal="pop" style="--d:1.2s; --f:-4s">
+      <span class="check"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
+      <div><b>Treino A · Inferiores</b><small>concluído agora</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BANDS ============ -->
+<div class="bands" aria-hidden="true">
+  <div class="band band--accent"><div class="band__track">
+    <span>Emagrecimento</span><span>Hipertrofia</span><span>Condicionamento</span><span>Mobilidade</span><span>Funcional</span><span>Gestantes</span><span>50+</span><span>Corrida</span>
+    <span>Emagrecimento</span><span>Hipertrofia</span><span>Condicionamento</span><span>Mobilidade</span><span>Funcional</span><span>Gestantes</span><span>50+</span><span>Corrida</span>
+  </div></div>
+  <div class="band band--ink"><div class="band__track band__track--rev">
+    <span>Força</span><span>Constância</span><span>Saúde</span><span>Energia</span><span>Autoestima</span><span>Disciplina leve</span>
+    <span>Força</span><span>Constância</span><span>Saúde</span><span>Energia</span><span>Autoestima</span><span>Disciplina leve</span>
+  </div></div>
+</div>
+
+<!-- ============ SOBRE ============ -->
+<section class="about wrap" id="sobre">
+  <div class="about__media" data-reveal="left">
+    <div class="arch">
+      <div class="arch__glow"></div>
+      <img src="assets/sobre.webp" alt="" loading="lazy" width="621" height="860">
+    </div>
+    <span class="sticker sticker--a">Desde <b>2018</b></span>
+    <span class="sticker sticker--b">✦ Treino com propósito</span>
+  </div>
+
+  <div class="about__text">
+    <span class="kicker" data-reveal>Prazer,</span>
+    <h2 class="h2" data-reveal>eu sou <span class="slot" data-slot="nome">Seu Nome</span> e acredito que treino bom é o que <em>você consegue manter.</em></h2>
+    <p class="body" data-reveal>Há mais de <span class="slot">8 anos</span> ajudo pessoas reais — com trabalho, filhos e pouco tempo — a ganhar força, perder o medo da academia e criar um hábito que dura. Nada de treino copiado da internet: cada plano nasce da sua avaliação, do seu objetivo e da sua agenda.</p>
+
+    <ul class="creds" data-stagger>
+      <li data-reveal><svg viewBox="0 0 24 24"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M7 11.6V16c3 2.2 7 2.2 10 0v-4.4"/></svg><span>Bacharel em Educação Física · <span class="slot">Instituição</span></span></li>
+      <li data-reveal><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg><span>Pós em <span class="slot">Fisiologia do Exercício</span></span></li>
+      <li data-reveal><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>CREF <span data-slot="cref">000000-G/UF</span></span></li>
+    </ul>
+
+    <div class="stats" data-stagger>
+      <div class="stat stat--1" data-reveal="pop"><b><span data-count="8">0</span>+</b><span>anos de experiência</span></div>
+      <div class="stat stat--2" data-reveal="pop"><b><span data-count="120">0</span>+</b><span>alunos acompanhados</span></div>
+      <div class="stat stat--3" data-reveal="pop"><b><span data-count="3500" data-sep>0</span>+</b><span>treinos aplicados</span></div>
+      <div class="stat stat--4" data-reveal="pop"><b><span data-count="97">0</span>%</b><span>renovam o plano</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTODO ============ -->
+<section class="method sheet" id="metodo">
+  <div class="wrap">
+    <div class="sec-head sec-head--light">
+      <span class="kicker" data-reveal>Como funciona</span>
+      <h2 class="h2" data-reveal>Do primeiro <em>oi</em> ao resultado, em quatro passos.</h2>
+    </div>
+
+    <div class="steps">
+      <svg class="steps__path" viewBox="0 0 1200 260" aria-hidden="true">
+        <path d="M20 170 C 160 40, 300 40, 330 120 S 520 250, 620 140 S 820 20, 900 120 S 1100 230, 1180 90"/>
+      </svg>
+      <article class="step" data-reveal style="--d:0s">
+        <span class="step__n">01</span>
+        <div class="step__ico"><svg viewBox="0 0 24 24"><path d="M8 4h8l1 3H7l1-3Z"/><rect x="5" y="7" width="14" height="14" rx="3"/><path d="M9 12h6M9 16h4"/></svg></div>
+        <h3>Conversa &amp; avaliação</h3>
+        <p>Anamnese, testes de mobilidade e composição corporal. Entendo sua rotina antes de passar qualquer exercício.</p>
+      </article>
+      <article class="step" data-reveal style="--d:.12s">
+        <span class="step__n">02</span>
+        <div class="step__ico"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V8"/></svg></div>
+        <h3>Plano sob medida</h3>
+        <p>Periodização pensada para o seu objetivo, o seu nível e o tempo que você realmente tem.</p>
+      </article>
+      <article class="step" data-reveal style="--d:.24s">
+        <span class="step__n">03</span>
+        <div class="step__ico"><svg viewBox="0 0 24 24"><path d="M6.5 6.5v11m11-11v11M3 9.5v5m18-5v5M6.5 12h11"/></svg></div>
+        <h3>Treino acompanhado</h3>
+        <p>Execução corrigida, carga certa e motivação — presencial ou por vídeo no app.</p>
+      </article>
+      <article class="step" data-reveal style="--d:.36s">
+        <span class="step__n">04</span>
+        <div class="step__ico"><svg viewBox="0 0 24 24"><path d="M3 17 9 11l4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <h3>Reavaliação &amp; ajuste</h3>
+        <p>A cada 30 dias medimos, comparamos e ajustamos. Evolução que você enxerga.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODALIDADES ============ -->
+<section class="modes wrap" id="modalidades">
+  <div class="sec-head">
+    <span class="kicker" data-reveal>Modalidades</span>
+    <h2 class="h2" data-reveal>Do jeito que <em>funciona pra você.</em></h2>
+  </div>
+
+  <div class="bento">
+    <article class="tile tile--presencial" data-reveal>
+      <svg class="map" viewBox="0 0 600 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path class="map__river" d="M-20 120 C 120 160, 160 60, 300 110 S 520 220, 640 160"/>
+        <path class="map__park" d="M380 300 c40-30 120-20 140 20 s-10 90-70 90 s-110-70-70-110Z"/>
+        <g class="map__streets">
+          <path d="M-10 260 L 620 200"/><path d="M-10 400 L 620 360"/><path d="M90 -10 L 150 580"/>
+          <path d="M300 -10 L 260 580"/><path d="M470 -10 C 440 200, 520 380, 480 580"/>
+          <path d="M-10 520 C 200 470, 380 520, 620 470"/>
+        </g>
+        <g class="map__alleys">
+          <path d="M-10 190 L 300 160"/><path d="M150 320 L 620 290"/><path d="M200 -10 L 210 580"/>
+          <path d="M380 -10 L 360 260"/><path d="M-10 460 L 280 440"/><path d="M40 300 L 270 280"/>
+        </g>
+        <path class="map__route" d="M118 470 C 140 410, 200 400, 262 392 S 300 300, 296 250 S 340 200, 404 188"/>
+        <circle class="map__you" cx="118" cy="470" r="9"/>
+        <g transform="translate(404 188)">
+          <circle class="map__ping" r="22"/>
+          <path class="map__pin" d="M0 0 C -6 -14, -20 -22, -20 -38 A 20 20 0 1 1 20 -38 C 20 -22, 6 -14, 0 0Z"/>
+          <circle class="map__dot" cy="-38" r="7"/>
+        </g>
+      </svg>
+      <div class="map__label" aria-hidden="true"><b>Studio</b> · <span data-slot="cidade">Sua Cidade</span></div>
+      <div class="tile__shade"></div>
+      <div class="tile__body">
+        <span class="tag">Mais procurado</span>
+        <h3>Presencial</h3>
+        <p>Na academia, no condomínio ou ao ar livre em <span data-slot="cidade">Sua Cidade</span>. Eu levo o plano, você leva a vontade.</p>
+        <div class="chips"><span>1:1</span><span>Duplas</span><span>Horários flexíveis</span></div>
+      </div>
+    </article>
+
+    <article class="tile tile--online" data-reveal style="--d:.1s">
+      <h3>Online</h3>
+      <p>Treinos no app, vídeo de cada exercício e ajustes semanais pelo WhatsApp.</p>
+      <div class="phone" aria-hidden="true">
+        <div class="phone__notch"></div>
+        <div class="phone__top"><small>Hoje</small><b>Treino A · Inferiores</b></div>
+        <div class="phone__bar"><i></i></div>
+        <ul class="phone__list">
+          <li><span class="cb"></span>Agachamento livre<em>4×10</em></li>
+          <li><span class="cb"></span>Leg press 45°<em>3×12</em></li>
+          <li><span class="cb"></span>Stiff com halteres<em>3×10</em></li>
+          <li><span class="cb"></span>Afundo búlgaro<em>3×10</em></li>
+          <li><span class="cb"></span>Panturrilha em pé<em>4×15</em></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="tile tile--consult" data-reveal style="--d:.2s">
+      <div class="tile__ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+      <h3>Consultoria</h3>
+      <p>Planilha mensal + correção por vídeo, para quem já treina sozinho e quer direção.</p>
+    </article>
+
+    <article class="tile tile--free" data-reveal="pop" style="--d:.3s">
+      <span class="tile__big">1ª</span>
+      <h3>avaliação por minha conta</h3>
+      <a href="#contato" class="tile__link" data-wa="Oi! Quero marcar minha avaliação gratuita.">Marcar agora <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </article>
+
+    <article class="tile tile--publico" data-reveal style="--d:.15s">
+      <h3>Para quem é</h3>
+      <div class="chips chips--lg" data-stagger>
+        <span data-reveal="pop">Iniciantes</span><span data-reveal="pop">Emagrecimento</span><span data-reveal="pop">Hipertrofia</span><span data-reveal="pop">Gestantes</span><span data-reveal="pop">50+</span><span data-reveal="pop">Corredores</span><span data-reveal="pop">Volta aos treinos</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section class="voices" id="depoimentos">
+  <div class="wrap"><div class="sec-head">
+    <span class="kicker" data-reveal>Depoimentos</span>
+    <h2 class="h2" data-reveal>Quem treina comigo <em>conta melhor.</em></h2>
+    <p class="note" data-reveal>✎ Espaço para os depoimentos reais dos seus alunos.</p>
+  </div></div>
+  <div class="voices__rail" data-reveal>
+    <div class="voices__track">
+      <figure class="voice voice--a"><div class="stars">★★★★★</div><blockquote>“Eu tinha pavor de academia. Hoje treino 3x por semana e sinto falta quando não vou.”</blockquote><figcaption><i>NA</i><span><b class="slot">Nome da Aluna</b><small>Iniciante · 6 meses</small></span></figcaption></figure>
+      <figure class="voice voice--b"><div class="stars">★★★★★</div><blockquote>“O treino cabe na minha agenda maluca. 40 minutos bem feitos valem mais que 2 horas perdido.”</blockquote><figcaption><i>NO</i><span><b class="slot">Nome do Aluno</b><small>Hipertrofia · 1 ano</small></span></figcaption></figure>
+      <figure class="voice voice--c"><div class="stars">★★★★★</div><blockquote>“Treinei durante toda a gestação com segurança. Atenção a cada detalhe.”</blockquote><figcaption><i>NA</i><span><b class="slot">Nome da Aluna</b><small>Gestante · 9 meses</small></span></figcaption></figure>
+      <figure class="voice voice--d"><div class="stars">★★★★★</div><blockquote>“Aos 58 anos voltei a subir escada sem dor no joelho. Mudou meu dia a dia.”</blockquote><figcaption><i>NA</i><span><b class="slot">Nome do Aluno</b><small>50+ · 8 meses</small></span></figcaption></figure>
+      <figure class="voice voice--e"><div class="stars">★★★★★</div><blockquote>“O online funciona de verdade: vídeo de cada exercício e resposta rápida no WhatsApp.”</blockquote><figcaption><i>NA</i><span><b class="slot">Nome da Aluna</b><small>Online · 4 meses</small></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANOS ============ -->
+<section class="plans wrap" id="planos">
+  <div class="sec-head sec-head--center">
+    <span class="kicker" data-reveal>Planos</span>
+    <h2 class="h2" data-reveal>Escolha o seu <em>ritmo.</em></h2>
+    <div class="switch" role="group" aria-label="Período de cobrança" data-reveal>
+      <button class="is-on" data-period="mensal">Mensal</button>
+      <button data-period="tri">Trimestral <small>−10%</small></button>
+      <span class="switch__knob"></span>
+    </div>
+  </div>
+
+  <div class="plan-grid">
+    <article class="plan" data-reveal style="--d:0s">
+      <h3>Online</h3>
+      <p class="plan__desc">Para treinar onde e quando quiser.</p>
+      <div class="price"><small>R$</small><b data-mensal="149" data-tri="134">149</b><span>/mês</span></div>
+      <ul>
+        <li>App com treinos e vídeos</li>
+        <li>Ajustes a cada 15 dias</li>
+        <li>Suporte no WhatsApp</li>
+        <li>Reavaliação mensal</li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="#contato" data-wa="Oi! Tenho interesse no plano Online.">Quero esse plano</a>
+    </article>
+
+    <article class="plan plan--hot" data-reveal style="--d:.12s">
+      <span class="plan__flag">Mais escolhido</span>
+      <h3>Presencial 2x</h3>
+      <p class="plan__desc">Acompanhamento de perto, duas vezes por semana.</p>
+      <div class="price"><small>R$</small><b data-mensal="480" data-tri="432">480</b><span>/mês</span></div>
+      <ul>
+        <li>8 aulas por mês</li>
+        <li>Avaliação física completa</li>
+        <li>Plano + app inclusos</li>
+        <li>Suporte no WhatsApp</li>
+      </ul>
+      <a class="btn btn--ink btn--block" href="#contato" data-wa="Oi! Tenho interesse no plano Presencial 2x.">Quero esse plano</a>
+    </article>
+
+    <article class="plan" data-reveal style="--d:.24s">
+      <h3>Presencial 3x</h3>
+      <p class="plan__desc">Para quem quer acelerar o resultado.</p>
+      <div class="price"><small>R$</small><b data-mensal="690" data-tri="621">690</b><span>/mês</span></div>
+      <ul>
+        <li>12 aulas por mês</li>
+        <li>Tudo do plano 2x</li>
+        <li>Orientação de sono e hábitos</li>
+        <li>Prioridade na agenda</li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="#contato" data-wa="Oi! Tenho interesse no plano Presencial 3x.">Quero esse plano</a>
+    </article>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq wrap" id="duvidas">
+  <div class="sec-head">
+    <span class="kicker" data-reveal>Dúvidas</span>
+    <h2 class="h2" data-reveal>Perguntas que <em>sempre</em> me fazem.</h2>
+  </div>
+  <div class="faq__list" data-stagger>
+    <details data-reveal><summary>Nunca treinei. Consigo acompanhar?<span class="plus"></span></summary><div class="faq__a"><p>Consegue — e é exatamente para isso que eu existo. Começamos do seu nível, com exercícios que você entende e consegue executar bem. A intensidade sobe junto com a sua confiança.</p></div></details>
+    <details data-reveal><summary>Preciso estar matriculado em uma academia?<span class="plus"></span></summary><div class="faq__a"><p>Não necessariamente. Dá para treinar na academia do seu prédio, ao ar livre ou em casa com poucos equipamentos. O plano se adapta ao espaço que você tem.</p></div></details>
+    <details data-reveal><summary>Como funciona o acompanhamento online?<span class="plus"></span></summary><div class="faq__a"><p>Você recebe os treinos no app, com vídeo de cada exercício. Me manda vídeos da execução quando quiser correção, e a cada 15 dias ajustamos cargas e volume pelo WhatsApp.</p></div></details>
+    <details data-reveal><summary>Você monta dieta também?<span class="plus"></span></summary><div class="faq__a"><p>Plano alimentar é com nutricionista. Trabalho junto com o seu, ou indico parceiros de confiança — assim treino e alimentação andam na mesma direção.</p></div></details>
+    <details data-reveal><summary>Posso cancelar quando quiser?<span class="plus"></span></summary><div class="faq__a"><p>No plano mensal, sim, com aviso de 15 dias. O trimestral tem desconto justamente por ser um compromisso maior com o seu resultado.</p></div></details>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta sheet sheet--dark" id="contato">
+  <div class="cta__glow" aria-hidden="true"></div>
+  <div class="wrap cta__inner">
+    <span class="kicker kicker--light" data-reveal>Bora?</span>
+    <h2 class="cta__title" data-reveal>Seu próximo treino começa com um <em>oi.</em></h2>
+    <p class="cta__sub" data-reveal>Me chama no WhatsApp, conta seu objetivo e marcamos sua avaliação. Sem compromisso.</p>
+    <div class="cta__btns" data-reveal>
+      <a class="btn btn--accent btn--lg magnetic" href="#contato" data-wa="Oi! Vi seu site e quero agendar minha avaliação.">
+        <svg viewBox="0 0 24 24" class="wa"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z"/><path d="M8.8 8.4c.3-.6.6-.6.9-.6h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .6.5.9 1.6 2 2.6 2.5.3.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.2.4.4 0 .5-.1 1.1-.6 1.5-.5.4-1.4.7-2.3.4-1-.3-2.3-.9-3.5-2.1-1.3-1.2-2-2.6-2.3-3.4-.3-.9 0-1.9.4-2.4Z" class="wa__in"/></svg>
+        Chamar no WhatsApp
+      </a>
+      <a class="btn btn--glass btn--lg" data-insta-href href="#" target="_blank" rel="noopener">@<span data-slot="insta">seuinsta</span></a>
+    </div>
+  </div>
+
+  <footer class="foot wrap">
+    <div class="foot__brand">
+      <span class="brand__mark" data-initials>SN</span>
+      <div><b data-slot="nome">Seu Nome</b><small>Personal Trainer · CREF <span data-slot="cref">000000-G/UF</span></small></div>
+    </div>
+    <nav class="foot__links" aria-label="Rodapé">
+      <a href="#sobre">Sobre</a><a href="#metodo">Método</a><a href="#planos">Planos</a><a href="#duvidas">Dúvidas</a>
+    </nav>
+    <small class="foot__copy">© <span data-year>2026</span> <span data-slot="nome">Seu Nome</span> · <span data-slot="cidade">Sua Cidade</span></small>
+  </footer>
+</section>
+
+</main>
+
+<!-- ============ FLUTUANTES ============ -->
+<a class="fab-wa" href="#contato" data-wa="Oi! Vi seu site e quero saber mais." aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z"/></svg>
+</a>
+
+<div class="editor" id="editor">
+  <button class="editor__toggle" aria-expanded="false" aria-controls="editor-panel">
+    <svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4"/></svg>
+    <span>Ver com o seu nome</span>
+  </button>
+  <form class="editor__panel" id="editor-panel" autocomplete="off">
+    <div class="editor__head">
+      <b>Personalize a prévia</b>
+      <small>Muda na hora. Depois copie o link.</small>
+    </div>
+    <label>Nome<input name="nome" placeholder="Ex.: Carla Mendes" maxlength="40"></label>
+    <label>Cidade<input name="cidade" placeholder="Ex.: Curitiba" maxlength="40"></label>
+    <div class="editor__row">
+      <label>Instagram<input name="insta" placeholder="seuinsta" maxlength="30"></label>
+      <label>WhatsApp<input name="whats" placeholder="(11) 99999-9999" inputmode="tel" maxlength="20"></label>
+    </div>
+    <label>CREF<input name="cref" placeholder="000000-G/UF" maxlength="20"></label>
+    <fieldset class="editor__colors">
+      <legend>Cor da marca</legend>
+      <button type="button" data-cor="FF5A2C" style="--c:#FF5A2C" aria-label="Coral"></button>
+      <button type="button" data-cor="E8457A" style="--c:#E8457A" aria-label="Rosa"></button>
+      <button type="button" data-cor="7C5CFF" style="--c:#7C5CFF" aria-label="Lilás"></button>
+      <button type="button" data-cor="2F6BFF" style="--c:#2F6BFF" aria-label="Azul"></button>
+      <button type="button" data-cor="12A37A" style="--c:#12A37A" aria-label="Verde"></button>
+      <button type="button" data-cor="C9E340" style="--c:#C9E340" aria-label="Lima"></button>
+    </fieldset>
+    <div class="editor__actions">
+      <button type="button" class="btn btn--ink btn--sm" data-copy>Copiar link</button>
+      <button type="button" class="btn btn--ghost btn--sm" data-reset>Limpar</button>
+    </div>
+  </form>
+</div>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
